@@ -66,7 +66,7 @@ else
   Puppet::ResourceApi.register_type(
     name: 'network_interface',
     docs: 'Manage physical network interfaces, e.g. Ethernet1',
-    features: ['remote_resource'],
+    features: ['remote_resource', 'canonicalize'],
     attributes: {
       enable: {
         type:    'Optional[Boolean]',
